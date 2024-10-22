@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style>
+        /* SISTEMAS DE BOX
+
+            boder   = a morda da caixa
+
+            padding = "o forro da caixa"dentro da borda
+            
+            margin  = e o espaco fora da caixa
+        */
+        /*
+            para centralizar uma box vc tem que usar o margin no auto assim sempre vai estar centralizado diacordo com o navegador da pessoa
+        */
+        /*
+            para fazer uma borda da margin so usar o outline,vai ficar entre a borda e a margin tipo uma segunda borda
+        */
+        body {
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 { /*box-level*/
+            background-color: rgba(134, 134, 134, 0.644);
+            height: 300px;
+            width: 300px;
+
+            border: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+
+            margin: auto;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+        a { /*inline-level*/
+            border:10px solid red;
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        h2 {
+            background-color: rgb(141, 141, 141);
+            height: 30px;
+            width: 350px;
+            border: 10px solid salmon;
+            padding: 10px 20px;
+            margin: 30px auto 30px auto;
+            outline: 5px dashed darkslategray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao um Exemplo de box-level,mas os <a href="#">mas os links sao um Exemplo de caixas inline-level</a>Vamos ver como tudo isso funciona</p>
+    <h2>Exemplo de caixa Shorthands</h2>
+    <p>Paragrafos aleatorio Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsum quo, dolores molestiae consectetur aut. Praesentium minus rem exercitationem iste quia, facere officia, harum consectetur, laudantium fugit minima repellat incidunt!</p>
+</body>
+</html>

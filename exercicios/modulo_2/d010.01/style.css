@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+    background-color: var(--cor0);
+}
+@font-face {
+    font-family: 'commando';
+    src: url(fontes/commando/commando.ttf);
+}
+
+:root {
+
+    --cor0: #A5A2AB;
+    --cor00: #EFEEF0;
+    --cor01: #f3dc45;
+    --cor02: #1F3473;
+    --cor03: #0b85f7;
+
+    --fonte-padrao:'commando','Arial','sans-serf';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+iframe {
+    width: 100%;
+}
+img {
+    width: 100%;
+}
+header{
+    background: linear-gradient(#1F3473,#010616 90%);
+}
+header > h1 {
+    color: var(--cor00);
+    font-family: var(--fonte-padrao);
+}
+header > nav {
+    background-color: var(--cor01);
+}
+main {
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--cor00);
+}
+main > article > h2 {
+    color: var(--cor02);
+    font-family: var(--fonte-padrao);
+}
+main img {
+    margin: auto;
+}
+footer{
+    background-color: rgb(5, 2, 48);
+}
+footer > p {
+    color: var(--cor00);
+}

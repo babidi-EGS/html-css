@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: dimgray;
+        }
+        header {
+            background-color: #c2c2c2;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 110px;
+            width: auto;
+        }
+            h1 {
+            text-align: center;
+            background-color: #a5a5a5;
+            height: auto;
+            width: 200px;
+            margin: auto;
+            box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.568);
+        }
+            nav{
+            background-color: #a5a5a5;
+            padding:10px;
+            margin: 20px 10px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.301);
+        }
+                nav > a {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: auto;
+        }
+        main {
+            background-color: #c2c2c2;
+            border-radius: 20px;
+            margin: 20px;
+        }
+            h2{
+                text-align: center;
+                color: white;
+                height: 30px;
+                width: 200px;
+                margin: 10px auto;
+            }
+                .assunto {
+                background-color: #3d3d3d;
+            }
+                .noticia{
+                    background-color: #1d1b1b;
+                }
+        article{
+            width: auto;
+            height: auto;
+            padding: 1px;
+        }
+            article > p{
+                background-color: #a3a2a2bd;
+                height: auto;
+                width: auto;
+                padding: 10px 20px;
+                margin: auto 20px;
+            }
+        aside {
+            background-color: #3d3d3d;
+            text-align: center;
+            margin: 10px 30px;
+        }
+        aside > p {
+            height: 20px;
+            width: auto;
+            padding: auto;
+            margin: 10px 20px;
+        }
+        footer {
+            text-align: center;
+            background-color: #d1d1d1;
+            padding: 1px;
+            margin: 20px;
+        }
+        footer > p {
+            padding: 0px;
+            margin: 0px;
+        }
+        div#bola{
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 100%;
+        }
+        div > img {
+            height: 190px;
+            width: 190px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2 class="assunto">Assunto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam similique earum voluptatem ducimus voluptatibus. Distinctio, quam libero amet exercitationem sequi vero possimus architecto magni dolorem quibusdam quod sunt aut pariatur?</p>
+                    <aside>
+                    <p>Artigo escrito por mim</p>
+                    </aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2 class="noticia">Noticia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis omnis fuga, vero dolorem cum exercitationem eius placeat labore, delectus animi quam deserunt nulla nisi maiores. Explicabo recusandae corporis enim!</p>
+                <aside>
+                    <p>Artigo escrito por lorem</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <div id="bola"><img src="img/html.ico.png" alt="toma">
+    </div>
+</body>
+</html>
