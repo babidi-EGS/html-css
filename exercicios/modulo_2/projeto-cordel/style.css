@@ -4,3 +4,37 @@
     padding: 0px;
     margin: 0px;
 }
+:root {
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding: 20px 5px 20px 5px;
+    font-family: var(--fonte1);
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header a:hover{
+    text-decoration: underline;
+}
+main {
+
+}
+footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
