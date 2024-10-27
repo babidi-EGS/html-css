@@ -37,6 +37,7 @@ header > p{
 main {
     height: auto;
     width: auto;
+    font-family: var(--fonte3);
 }
 footer{
     background-color: black;
