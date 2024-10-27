@@ -1,167 +1,154 @@
 @charset "UTF-8";
+
 @font-face {
-    font-family: 'commando';
-    src: url('fontes/commando/commando.ttf');
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf);
 }
 
-body {
-    background-color: #A5A2AB;
+:root {
+    --cor0: #BFD5D9;
+    --cor1: #32DB84;
+    --cor2: #2AB86F;
+    --cor3: #218F56;
+    --cor4: #17663D;
+    --cor5: #0E3D25;
+
+    --fonte-padrao:'idroid', Arial, Helvetica, sans-serif;
+
 }
-header{
-    height: auto;
-    width: auto;
-    padding: auto;
-    margin: auto;
-    background:linear-gradient(0deg,#0c152e,#1F3473 90%);
+* {
+    margin: 0px;
+    padding: 0px;
 }
-header > h1 {
-    text-align: center;
-    color: #EFEEF0;
-    padding: 17px;
-    margin: auto;
-    font-family: 'commando';
+strong{
+    color: var(--cor4);
 }
-header > nav {
-    height: auto;
-    width: auto;
-    background-color: #f3dc45;
+body{
+    background-color: var(--cor0);
 }
 a {
-    height: auto;
-    width: auto;
-    margin: 20px;
-    text-align: center;
-    padding: 20px,0px,20px,0px;
     text-decoration: none;
-}
-main {
-    height: auto;
-    width: auto;
-    margin: 20px;
-    background-color: #EFEEF0;
-    border-radius: 0px 0px 10px 10px;
-}
-section > article > h1 {
-    height: auto;
-    width: auto;
-    padding: 0px 10px 0px 10px;
-    margin: 0px 20px 0px 20px;
-    margin-left: 8px;
-    background:linear-gradient(to right,#0b85f7,#ffffff00 90%);
-    color: #1F3473;
-    font-family: 'commando';
-    font-size: 30px;
-}
-section > article > p {
-    height: auto;
-    width: auto;
-    padding: 10px 20px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-}
-section > article > h2 {
-    height: auto;
-    width: auto;
-    padding: 5px 10px 0px 10px;
-    margin: 10px;
-    background:linear-gradient(to right,#0b85f7,#ffffff00 90%);
-    color: #1F3473;
-    font-family: 'commando';
-    font-size: 25px;
-}
-section > article > div {
-    width: auto;
-    height: auto;
-    margin: auto;
-    display: inline-block;
 
 }
-section > article > div > img {
-    height: 400px;
-    width: auto;
+a.externo::after{
+    content: '\1F517';
 }
-div#autor2{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 200px;
-}
-img#autor{
-    height: 200px;
-    width: 200px;
-    padding: auto;
-    margin: 30px;
-    border-radius: 30px;
-    border: 2px solid rgba(0, 0, 0, 0.212);
-}
-#youtube2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 560px;
-    height: auto
-}
-#youtube {
-    background-color: #0b85f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin: 20px;
-}
-h3 {
-    padding: 5px 10px; /* Padding reduzido para simplificar */
-    margin: 0 20px; /* Margens horizontais aplicadas em uma linha */
-    background-color: #f3dc45; /* Cor de fundo amarela */
-    color: #1F3473; /* Cor do texto azul escuro */
-    font-family: 'commando', sans-serif; /* Fonte com fallback */
-    font-size: 25px; /* Tamanho da fonte */
-    border-radius: 20px 20px 0 0; /* Arredondamento no topo */
-    text-align: center; /* Centralizar o texto */
-}
-
-ol {
-    font-family: Arial, Helvetica, sans-serif; /* Definir fonte para ol */
-    display: flex; /* Ativa Flexbox */
-    flex-direction: column; /* Colocar os itens da lista na vertical */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    margin: 0; /* Remove margem da lista */
-    padding: 0; /* Remove padding interno padrão */
-    list-style-type: none; /* Remove os marcadores da lista */
-    border-radius: 20px; /* Borda arredondada */
-}
-
-li {
-    text-align: center; /* Centraliza o texto dos itens da lista */
-    font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
-    padding: 10px; /* Espaçamento interno para os itens */
-    margin: 10px 0; /* Espaçamento entre os itens */
-    border-bottom: 1px solid #ccc; /* Linha inferior para separar itens */
-    width: 100%; /* Ocupar 100% da largura */
-}
-
-li:last-child {
-    border-bottom: none; /* Remove a linha do último item da lista */
-}
-
-div#lista {
-    font-family: Arial, Helvetica, sans-serif; /* Definir fonte para o contêiner */
-    background-color: rgba(243, 220, 69, 0.46); /* Cor de fundo com transparência */
-    display: flex; /* Ativa o Flexbox */
-    flex-direction: column; /* Organiza os itens na vertical */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
-    margin: 0 20px; /* Margem lateral aplicada de forma eficiente */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 0 0 20px 20px; /* Arredondamento na parte inferior */
-}
-
-footer{
-    background-color: #918ebd;
+header{
+    background:linear-gradient(0deg,#0E3D25,#32DB84 90%);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    text-shadow:1px 0px 2px black;
+    font-size: large;
+}
+header  h1 {
+    color: white;
+    padding-top: 10px;
+}
+header p {
+    color: white;
+    margin-top: 20px;
+}
+header nav {
+    text-align: left;
+    background-color: #0e3d2534;
+    text-shadow: none;
+    margin-top: 50px;
+    font-size: medium;
+}
+header a {
+    margin: 10px;
+    color: white;
+}
+nav > a:hover{
+    background-color: #17663D;
+}
+main{
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+}
+main  h2 {
+    padding-left: 10px;
+    color: var(--cor4);
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right,#32DB84, transparent);
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.3em;
+}
+main img {
+    width: 100%;
+}
+main img.pequeno {
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+div#video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+div#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+main a {
+    color: #0E3D25;
+    background-color: #2AB86F;
+    border-radius: 5px;
+}
+main a:hover {
+    background-color: #218F56;
+}
+main aside{
+    background-color: #74e6ab79;
+    border-radius: 10px;
+}
+article > aside > p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.3em;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+aside h3{
+    padding-left: 10px;
+    color: white;
+    background-color: #2AB86F;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+aside ul {
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-type: '\2714';
+    list-style-position: inside;
+    columns: 2;
+}
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+}
+footer p {
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
