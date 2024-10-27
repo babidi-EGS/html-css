@@ -10,6 +10,9 @@
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
+p {
+    font-size: x-large;
+}
 header{
     background-color: black;
     color: white;
@@ -38,6 +41,34 @@ main {
     height: auto;
     width: auto;
     font-family: var(--fonte3);
+}
+section#conterner{
+    height: 90dvh;
+    background-color: black;
+    background-image: url('imagens/29-01-18-ave-embratur-jpg.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+article.box{
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    position: absolute;
+    transform: translate(50% ,50%);
+}
+section#conterner1{
+    height: 90dvh;
+    background-color: black;
+    background-image: url('imagens/brazil-4714519_1280.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+article.box1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.397);
+    position: absolute;
+    transform: translate(50% ,50%);
 }
 footer{
     background-color: black;
