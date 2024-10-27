@@ -49,12 +49,12 @@ section#conterner{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-shadow: inset solid black;
 }
 article.box{
     background-color: rgba(0, 0, 0, 0.397);
     color: white;
     position: absolute;
-    transform: translate(50% ,50%);
 }
 section#conterner1{
     height: 90dvh;
@@ -68,7 +68,6 @@ article.box1{
     color: white;
     background-color: rgba(0, 0, 0, 0.397);
     position: absolute;
-    transform: translate(50% ,50%);
 }
 footer{
     background-color: black;
